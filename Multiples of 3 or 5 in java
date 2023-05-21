@@ -1,0 +1,21 @@
+Program in Java using functions and access the numbers dynamically :  
+
+import java.util.*;
+public class Main
+{
+    public static int multiples(int a,int b) {
+        int sum = 0;
+        for(int i=1; i<1000; i++) {
+            if(i%a==0||i%b==0) {
+                sum = sum+i;
+            }
+        }
+        return sum;
+    }
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+        int num1 = sc.nextInt(); //3
+        int num2 = sc.nextInt(); //5
+        System.out.println(multiples(num1,num2));
+	}
+}
